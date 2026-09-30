@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="task-1.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <p>Explore nature, cities and architeture.</p>
+    </header>
+
+    <div class="btns">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="city">City</button>
+        <button class="btn" data-filter="architecture">Architecture</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item" data-category="nature">
+      <img
+        src="https://picsum.photos/id/10/800/600"
+        alt="Mountain landscape"
+      />
+      <div class="overlay"><h3>Mountains</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img
+        src="https://picsum.photos/id/1011/800/600"
+        alt="City view"
+      />
+      <div class="overlay"><h3>City View</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img
+        src="https://picsum.photos/id/1015/800/600"
+        alt="River and mountains"
+      />
+      <div class="overlay"><h3>River</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="architecture">
+      <img
+        src="https://picsum.photos/id/1048/800/600"
+        alt="Architecture"
+      />
+      <div class="overlay"><h3>Architecture</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img
+        src="https://picsum.photos/id/1039/800/600"
+        alt="Forest"
+      />
+      <div class="overlay"><h3>Forest</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img
+        src="https://picsum.photos/id/1067/800/600"
+        alt="Urban scene"
+      />
+      <div class="overlay"><h3>Urban Life</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="architecture">
+      <img
+        src="https://picsum.photos/id/1076/800/600"
+        alt="Modern building"
+      />
+      <div class="overlay"><h3>Modern Design</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img
+        src="https://picsum.photos/id/1080/800/600"
+        alt="Natural landscape"
+      />
+      <div class="overlay"><h3>Landscape</h3></div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img
+        src="https://picsum.photos/id/122/800/600"
+        alt="City street"
+      />
+      <div class="overlay"><h3>City Street</h3></div>
+    </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="close" aria-label="Close">&times;</button>
+      <button class="prev" aria-label="Previous image">&#10094;</button>
+
+      <img
+        class="lightbox-content"
+        id="lightboxImage"
+        src=""
+        alt=""
+      />
+
+      <button class="next" aria-label="Next image">&#10095;</button>
+
+      <div class="caption" id="caption"></div>
+    </div>
+
+
+    <script src="task-1.js"></script>
+</body>
+</html>
